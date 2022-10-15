@@ -1,0 +1,10 @@
+#!/bin/bash
+
+/usr/sbin/sshd
+/hadoop-${HADOOP_VERSION}/sbin/start-dfs.sh
+/hadoop-${HADOOP_VERSION}/sbin/start-yarn.sh
+
+# daemonize
+while true; do
+  sleep 1000
+done
